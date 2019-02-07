@@ -3,8 +3,8 @@ ocaml-example-scripts
 
 Some OCaml scripts for learning/understanding. Finding online resources and
 narrative documentation for ocaml libraries is a bit hard, so I made this
-repository to have every script I've learned from in one place. Source is
-accredited on comments at the top of each file.
+repository to have every script I've learned from and every script I've made
+in one place. Source is accredited on comments at the top of each file.
 
 Installing OCaml and used libraries in a fairly recent Ubuntu:
 --------------------------------------------------------------
