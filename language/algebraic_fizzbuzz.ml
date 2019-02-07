@@ -1,5 +1,5 @@
 (*
-Comparing imperative and ADT implementations of FizzBuzz.
+Comparing non-ADT and ADT implementations of FizzBuzz.
 
 Original idea and implementation in Scala:
   http://engineering.monsanto.com/2016/01/11/algebraic-data-types/
