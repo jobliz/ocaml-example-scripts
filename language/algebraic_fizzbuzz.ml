@@ -35,6 +35,13 @@ let typed_fizzbuzz (n: int): fbr =
   else if is_mod_5 n then Buzz n
   else JustInt n
 
+let typed_fizzbuzz2 (n: int): fbr =
+  match n with 
+    | i when i mod 3 = 0 && i mod 5 = 0 -> FizzBuzz n
+    | i when i mod 3 = 0 -> Fizz n
+    | i when i mod 5 = 0 -> Buzz n
+    | i -> JustInt n
+
 let fizzbuzz_repr (n: fbr): string = 
   match n with
     | Fizz i -> "Fizz "
@@ -55,3 +62,11 @@ let () =
   5 |> typed_fizzbuzz |> fizzbuzz_repr |> print_bytes;
   15 |> typed_fizzbuzz |> fizzbuzz_repr |> print_bytes;
   7 |> typed_fizzbuzz |> fizzbuzz_repr |> print_bytes;
+
+  print_endline "";
+  print_endline "";
+  
+  3 |> typed_fizzbuzz2 |> fizzbuzz_repr |> print_bytes;
+  5 |> typed_fizzbuzz2 |> fizzbuzz_repr |> print_bytes;
+  15 |> typed_fizzbuzz2 |> fizzbuzz_repr |> print_bytes;
+  7 |> typed_fizzbuzz2 |> fizzbuzz_repr |> print_bytes;
