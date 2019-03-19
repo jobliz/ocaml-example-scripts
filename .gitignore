@@ -1,2 +1,9 @@
 *.native
+*.where
+*.cmi
+*.cmx
+*.cmo
+*.depends
+*.o
 */_build/*
+_build/*
